@@ -2,7 +2,7 @@ FROM node:20
 
 WORKDIR /app
 
-COPY urlfrontend/ /app
+COPY frontend/ /app
 
 RUN npm install && npm run build && npm install -g serve
 
